@@ -15,7 +15,7 @@ def init_hacks():
         "PRINTF('MASTERHAXOR');",
         "TARGET = MAX(IP_DATABASE;",
         "NUKE_CODES = GEO_GET(IPBASE.WHITE_HOUSE);",
-        "LAUNCH_NUKES();",
+        "LAUNCH_NUKES();"
     ]
     comments = [
         "# CRACKING VAULT CODES",
@@ -23,7 +23,7 @@ def init_hacks():
         "# BYPASSING 128-BIT ENCRYPTION",
         "# ACCESSING METASPLOIT API",
         "# TAPPING INTO WIRESHARK",
-        "# 070 117 099 107",
+        "# 070 117 099 107"
     ]
     return (functions, expressions, comments)
 
@@ -32,11 +32,11 @@ def spam():
     num_chars = random.randint(0,500)
     for i in range(0,num_chars):
         print(chars[random.randint(0,len(chars)-1)], end='', flush=True)
-        time.sleep(0.01)
+        time.sleep(0.005)
     time.sleep(0.20)
 
 def main():
-    hax_spd = 0.05
+    hax_spd = 0.04
 
     # Initialize strings
     functions, expressions, comments = init_hacks()
